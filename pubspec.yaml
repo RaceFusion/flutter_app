@@ -1,0 +1,30 @@
+name: karting_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  cupertino_icons: ^1.0.2
+  flutter_styled_toast: ^2.2.1
+  shared_preferences: ^2.2.2
+  local_auth: ^2.1.7
+  gap: ^3.0.1
+  intl: 0.19.0
+  http: ^1.2.0
+  dio: ^5.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
