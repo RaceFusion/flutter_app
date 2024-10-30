@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:karting_app/presentation/placeholder.dart';
+import 'package:karting_app/presentation/driver/screens/menu_screen.dart';
 import 'package:karting_app/presentation/placeholder2.dart';
 import 'package:karting_app/presentation/user_role_managment.dart';
 
@@ -66,7 +66,7 @@ class _BottomNavState extends State<BottomNav> {
           });
         },
         children: [
-          if (widget.roles.contains('Driver')) const PlaceHolder1(),
+          if (widget.roles.contains('Driver')) MenuScreen(),
           if (widget.roles.contains('Team')) const PlaceHolder2(),
           if (widget.roles.contains('Administrador'))
             const UserRoleManagement(),

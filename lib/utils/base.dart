@@ -35,7 +35,7 @@ class _BaseState extends State<Base> {
     loggedUser = User(
       id: 1,
       username: 'admin',
-      roles: [1, 2, 3],
+      roles: [1],
     );
 
 
