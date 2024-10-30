@@ -28,7 +28,7 @@ class _BottomNavState extends State<BottomNav> {
   Widget build(BuildContext context) {
     bottomNavBarItems = [];
 
-    if (widget.roles.contains('Escritor')) {
+    if (widget.roles.contains('Driver')) {
       bottomNavBarItems.add(
         const BottomNavigationBarItem(
           icon: Icon(Icons.car_rental),
@@ -37,7 +37,7 @@ class _BottomNavState extends State<BottomNav> {
       );
     }
 
-    if (widget.roles.contains('Lector')) {
+    if (widget.roles.contains('Team')) {
       bottomNavBarItems.add(
         const BottomNavigationBarItem(
           icon: Icon(Icons.search),
@@ -66,8 +66,8 @@ class _BottomNavState extends State<BottomNav> {
           });
         },
         children: [
-          if (widget.roles.contains('Escritor')) const PlaceHolder1(),
-          if (widget.roles.contains('Lector')) const PlaceHolder2(),
+          if (widget.roles.contains('Driver')) const PlaceHolder1(),
+          if (widget.roles.contains('Team')) const PlaceHolder2(),
           if (widget.roles.contains('Administrador'))
             const UserRoleManagement(),
         ],

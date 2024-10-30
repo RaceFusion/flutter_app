@@ -19,11 +19,11 @@ class Routes extends StatelessWidget {
       routes.add(const UserRoleManagement());
     }
 
-    if (roles.contains('Escritor')) {
+    if (roles.contains('Driver')) {
       routes.add(const PlaceHolder1());
     }
 
-    if (roles.contains('Lector')) {
+    if (roles.contains('Team')) {
       routes.add(const PlaceHolder2());
     }
 

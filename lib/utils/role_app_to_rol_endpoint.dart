@@ -5,9 +5,9 @@ class RoleAppToEndpoint {
       switch (role) {
         case 'Administrador':
           return 3;
-        case 'Escritor':
+        case 'Driver':
           return 1;
-        case 'Lector':
+        case 'Team':
           return 2;
         default:
           return -1;

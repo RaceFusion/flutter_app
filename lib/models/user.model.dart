@@ -44,9 +44,9 @@ class User {
   List<int> convertRolesStringToInt(){
     final List<int> rolesInt = [];
     for (final role in roles){
-      if (role == 'Escritor'){
+      if (role == 'Driver'){
         rolesInt.add(1);
-      } else if (role == 'Lector'){
+      } else if (role == 'Team'){
         rolesInt.add(2);
       } else if (role == 'Administrador'){
         rolesInt.add(3);
@@ -59,9 +59,9 @@ class User {
     final List<String> rolesString = [];
     for (final role in roles){
       if (role == 1){
-        rolesString.add('Escritor');
+        rolesString.add('Driver');
       } else if (role == 2){
-        rolesString.add('Lector');
+        rolesString.add('Team');
       } else if (role == 3){
         rolesString.add('Administrador');
       }

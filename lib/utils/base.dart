@@ -15,8 +15,8 @@ class Base extends StatefulWidget {
 class _BaseState extends State<Base> {
   Map<String, int> currentIndexMap = {
     'Administrador': 0,
-    'Escritor': 0,
-    'Lector': 0
+    'Driver': 0,
+    'Team': 0
   };
   late List<String> roles = [];
   late User loggedUser;
@@ -63,34 +63,34 @@ class _BaseState extends State<Base> {
           ),
         ),
       );
-    } else if (roles.contains('Escritor')) {
+    } else if (roles.contains('Driver')) {
       return MaterialApp(
         home: Scaffold(
           body: Routes(
-            index: currentIndexMap['Escritor'] ?? 0,
+            index: currentIndexMap['Driver'] ?? 0,
             roles: roles,
           ),
           bottomNavigationBar: BottomNav(
             currentIndex: (i) {
               setState(() {
-                currentIndexMap['Escritor'] = i;
+                currentIndexMap['Driver'] = i;
               });
             },
             roles: roles,
           ),
         ),
       );
-    } else if (roles.contains('Lector')) {
+    } else if (roles.contains('Team')) {
       return MaterialApp(
         home: Scaffold(
           body: Routes(
-            index: currentIndexMap['Lector'] ?? 0,
+            index: currentIndexMap['Team'] ?? 0,
             roles: roles,
           ),
           bottomNavigationBar: BottomNav(
             currentIndex: (i) {
               setState(() {
-                currentIndexMap['Lector'] = i;
+                currentIndexMap['Team'] = i;
               });
             },
             roles: roles,

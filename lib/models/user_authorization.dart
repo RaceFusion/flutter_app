@@ -31,9 +31,9 @@ class UserAuthotization{
     final List<String> rolesString = [];
     for (final role in roles){
       if (role == 1){
-        rolesString.add('Escritor');
+        rolesString.add('Driver');
       } else if (role == 2){
-        rolesString.add('Lector');
+        rolesString.add('Team');
       } else if (role == 3){
         rolesString.add('Administrador');
       }

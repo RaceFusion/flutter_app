@@ -23,8 +23,8 @@ class _UserRoleManagementState extends State<UserRoleManagement> {
   bool _isCreatingUser = false;
 
   final Map<int, String> roleDisplayNames = {
-    1: 'Escritor',
-    2: 'Lector',
+    1: 'Driver',
+    2: 'Team',
     3: 'Administrador',
   };
 
@@ -542,8 +542,8 @@ Widget _buildInfoRow(String label, Object value) {
     formattedValue = DateFormat('HH:mm - dd-MM-yyyy').format(value);
   } else if (value is List<dynamic>) {
     final Map<int, String> roleDisplayNames = {
-      1: 'Escritor',
-      2: 'Lector',
+      1: 'Driver',
+      2: 'Team',
       3: 'Administrador',
     };
     formattedValue =
