@@ -26,9 +26,9 @@ class _MenuScreenState extends State<MenuScreen> {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start, // Alinea el contenido a la izquierda
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 30), // Añadir un espacio antes del título y el cuerpo
+            const SizedBox(height: 30), 
             const Text(
               'Karts Disponibles:',
               style: TextStyle(
@@ -36,7 +36,7 @@ class _MenuScreenState extends State<MenuScreen> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 20), // Añadir un poco más de espacio entre el título y el cuerpo
+            const SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
                 itemCount: karts.length,
